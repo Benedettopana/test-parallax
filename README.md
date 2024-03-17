@@ -13,3 +13,11 @@
 - Javascript
 - Bootstrap
 - Vue
+
+## Sezioni
+
+1. Bento: sezione con delle card che hanno degli effetti hover.
+1. Service: sezione contenente tre card con i relativi piani disponibili.
+1. About us: sezione che ha varie informazioni.
+1. Contact: sezione contatti.
+1. Footer: classico footer con informazioni riguardanti il sito e la struttura.
