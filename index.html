@@ -36,22 +36,22 @@
     <header>
       <div class="container-fluid d-flex justify-content-between">
         <div class="logo ">
-          <h2>Logo</h2>
+          <h2 class="pe-none ">Logo</h2>
         </div>
-        <nav class="site-section mx-2">
-          <ul class="d-flex justify-content-around ">
-            <li class="mx-2">Home</li>
-            <li class="mx-2">Bento</li>
-            <li class="mx-2">Service</li>
-            <li class="mx-2">About us</li>
-            <li class="mx-2">Contact</li>
+        <nav class="site-section mx-2 ">
+          <ul class="d-flex justify-content-around align-items-center  ">
+            <li class="mx-2"><a href="#jumbotron">Home</a></li>
+            <li class="mx-2"><a href="#my-bento">Bento</a></li>
+            <li class="mx-2"><a href="#my-service">Service</a></li>
+            <li class="mx-2"><a href="#about-us">About us</a></li>
+            <li class="mx-2"><a href="#my-contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- /hearder -->
     <!-- Jumbotron -->
-    <section class="home d-flex">
+    <section id="jumbotron" class="home d-flex pe-none ">
       <!--!Cambiare l'ordine modificherà l'animazione -->
       <img class="mount2" :style="{ marginBottom: mount2MarginBottom + 'px' }" src="./assets/img/mount2.png">
       <img class="mount1" :style="{ marginBottom: mount1MarginBottom + 'px' }" src="./assets/img/mount1.png">
@@ -69,7 +69,7 @@
     <!-- /Jumbotron -->
 
     <!-- Bentobox -->
-    <section class="bento">
+    <section id="my-bento" class="bento">
       <div class="container-md">
         <!-- Top Bento 7/5 -->
         <div class="row pt-4 ">

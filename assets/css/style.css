@@ -5,6 +5,7 @@
   --header-text-color: #fff;
   --bg-bento: #3b3291;
   --bg-btn-header: #193452;
+  --bg-btn-header-2: #7d56ff;
 }
 /** /Custom Color palette  */
 /*! DEBUG CLASS */
@@ -16,7 +17,7 @@
 header {
   height: 60px;
   padding: 0 5%;
-  line-height: 60px;
+  /* line-height: 60px; */
   width: 100dvw;
   color: var(--header-text-color);
   position: fixed;
@@ -25,13 +26,30 @@ header {
 
 header h2 {
   line-height: 60px;
+  font-size: 2.5rem;
 }
 
-/* TODO: creare effeto hover */
+header .site-section {
+  line-height: 60px;
+}
+
+/* TODO: Creare hamburger per smartphone */
 header ul li {
   /* ? Reset style */
   list-style: none;
   font-weight: 600;
+}
+header ul li a {
+  /* ? Reset style */
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 4px 12px;
+}
+header ul li:hover a {
+  /** Hover */
+  background-color: var(--bg-btn-header-2);
+  border-radius: 100px;
 }
 
 /*% /Header */
@@ -79,8 +97,14 @@ body {
   z-index: 998;
 }
 
+.bento .card:hover {
+  cursor: pointer;
+}
+
 .text-bg {
   background-color: var(--bg-gradient-secondary) !important;
 }
 /* TODO: creare effeto hover */
 /*% /Bento */
+
+/*TODO: Rendere responsive */
