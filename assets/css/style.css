@@ -4,6 +4,7 @@
   --bg-gradient-secondary: #86a8db;
   --header-text-color: #fff;
   --bg-bento: #3b3291;
+  --bg-btn-header: #193452;
 }
 /** /Custom Color palette  */
 /*! DEBUG CLASS */
@@ -36,13 +37,15 @@ header ul li {
 /*% /Header */
 body {
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 /*% Jumbotron */
 .home {
   height: 100dvh;
   background: linear-gradient(to top, #d2e2fb 30%, #86a8db);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 .home img {
@@ -70,6 +73,14 @@ body {
 .bento {
   background-color: var(--bg-bento);
   padding-top: 100px;
+
+  /** Posizionamento per andare sopra l'animazione */
+  position: relative;
+  z-index: 998;
+}
+
+.text-bg {
+  background-color: var(--bg-gradient-secondary) !important;
 }
 /* TODO: creare effeto hover */
 /*% /Bento */

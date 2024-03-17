@@ -31,143 +31,154 @@
 </head>
 
 <body>
-  <!-- hearder -->
-  <header>
-    <div class="container-fluid d-flex justify-content-between">
-      <div class="logo ">
-        <h2>Logo</h2>
+  <div id="app" class="container-full">
+    <!-- hearder -->
+    <header>
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="logo ">
+          <h2>Logo</h2>
+        </div>
+        <nav class="site-section mx-2">
+          <ul class="d-flex justify-content-around ">
+            <li class="mx-2">Home</li>
+            <li class="mx-2">Bento</li>
+            <li class="mx-2">Service</li>
+            <li class="mx-2">About us</li>
+            <li class="mx-2">Contact</li>
+          </ul>
+        </nav>
       </div>
-      <nav class="site-section class=" mx-2"">
-        <ul class="d-flex justify-content-around ">
-          <li class="mx-2">Home</li>
-          <li class="mx-2">Bento</li>
-          <li class="mx-2">Service</li>
-          <li class="mx-2">About us</li>
-          <li class="mx-2">Contact</li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- /hearder -->
-  <!-- Jumbotron -->
-  <section class="home d-flex">
-    <img src="./assets/img/mount2.png">
-    <img src="./assets/img/mount1.png">
-    <img src="./assets/img/bush2.png">
-    <div class="title">
-      <h1 class="text-white ">Parallax</h1>
-    </div>
-    <img src="./assets/img/bush1.png">
-    <img src="./assets/img/leaf2.png">
-    <img src="./assets/img/leaf1.png">
-  </section>
-  <!-- /Jumbotron -->
+    </header>
+    <!-- /hearder -->
+    <!-- Jumbotron -->
+    <section class="home d-flex">
+      <!--!Cambiare l'ordine modificherà l'animazione -->
+      <img class="mount2" :style="{ marginBottom: mount2MarginBottom + 'px' }" src="./assets/img/mount2.png">
+      <img class="mount1" :style="{ marginBottom: mount1MarginBottom + 'px' }" src="./assets/img/mount1.png">
 
-  <!-- Bentobox -->
-  <section class="bento">
-    <div class="container-md">
-      <!-- Top Bento 7/5 -->
-      <div class="row pt-4 ">
-        <div class="col-7 ">
-          <!-- Big Card -->
-          <div class="card text-white">
-            <img src="https://picsum.photos/400/200" class="card-img" alt="Stony Beach" />
-            <div class="card-img-overlay">
-              <p class="card-text">
-                cutting special want palace dear block vegetable everything no task corn feed earn church topic ear
-                remain
-              </p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
-          <!-- /Big Card -->
-        </div>
-        <!-- Medium Card -->
-        <div class="col-5 ">
-          <div class="card text-white">
-            <img src="https://picsum.photos/400/284" class="card-img" alt="Stony Beach" />
-            <div class="card-img-overlay">
-              <p class="card-text">
-                take outline bring shade look cream gun again hot silver twelve center golden disappear neck strip won
-                thread spring freedom scientific say supper widely
-              </p>
-              <p class="card-text">Last updated 10 mins ago</p>
-            </div>
-          </div>
-        </div>
-        <!-- /Medium Card -->
-        <!-- /Top Bento 7/5 -->
-        <!-- Bottom Bento 4/4/4-->
+      <img class="bush2" :style="{ marginBottom: bush2MarginBottom + 'px' }" src="./assets/img/bush2.png">
 
-        <div class="col-4 my-2 ">
-          <!-- little card 1-->
-          <div class="card">
-            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://picsum.photos/500/201" class="img-fluid" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-              </a>
-            </div>
-
-            <div class="card-body">
-              <p class="card-text">
-                able song larger running gray log case thing kept locate fly molecular it duty cool itself stopped meal
-                gravity human traffic supper accident sand
-              </p>
-
-            </div>
-          </div>
-          <!-- /little card 1-->
-        </div>
-        <div class="col-4 my-2 ">
-          <!-- little card 2 -->
-          <div class="card ">
-            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://picsum.photos/500/202" class="img-fluid" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-              </a>
-            </div>
-
-            <div class="card-body">
-              <p class="card-text">
-                atomic worker compass agree properly minute kept union leather future location imagine tent thousand
-                mail yesterday stairs known hill chose shorter rice its thee
-              </p>
-
-            </div>
-          </div>
-          <!-- /little card 2 -->
-
-        </div>
-        <div class="col-4 my-2  ">
-          <!-- little card 3 -->
-          <div class="card">
-            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://picsum.photos/500/203" class="img-fluid" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-              </a>
-            </div>
-
-            <div class="card-body">
-              <p class="card-text">
-                suppose force hundred stuck pure fifteen worker tropical mail most clay name tool cheese handsome drove
-                sudden deer birth more hay also biggest military
-              </p>
-
-            </div>
-          </div>
-          <!-- /little card 3 -->
-        </div>
-
-        <!-- /Bottom Bento 4/4/4-->
+      <div class="title">
+        <h1 class="title text-white" :style="{ marginTop: titleMarginTop + 'px' }">Parallax</h1>
       </div>
+      <img class="leaf1" :style="{ marginLeft: leaf1MarginLeft + 'px' }" src="./assets/img/leaf1.png">
+      <img class="leaf2" :style="{ marginLeft: leaf2MarginLeft + 'px' }" src="./assets/img/leaf2.png">
+      <img src="./assets/img/bush1.png">
+
+    </section>
+    <!-- /Jumbotron -->
+
+    <!-- Bentobox -->
+    <section class="bento">
+      <div class="container-md">
+        <!-- Top Bento 7/5 -->
+        <div class="row pt-4 ">
+          <div class="col-7 ">
+            <!-- Big Card -->
+            <div class="card text-white">
+              <img src="https://picsum.photos/400/200" class="card-img" alt="Stony Beach" />
+              <div class="card-img-overlay">
+                <p class="card-text">
+                  cutting special want palace dear block vegetable everything no task corn feed earn church topic
+                  ear
+                  remain
+                </p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+            <!-- /Big Card -->
+          </div>
+          <!-- Medium Card -->
+          <div class="col-5 ">
+            <div class="card text-white">
+              <img src="https://picsum.photos/400/284" class="card-img" alt="Stony Beach" />
+              <div class="card-img-overlay">
+                <p class="card-text">
+                  take outline bring shade look cream gun again hot silver twelve center golden disappear neck strip
+                  won
+                  thread spring freedom scientific say supper widely
+                </p>
+                <p class="card-text">Last updated 10 mins ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- /Medium Card -->
+          <!-- /Top Bento 7/5 -->
+          <!-- Bottom Bento 4/4/4-->
+
+          <div class="col-4 my-2 ">
+            <!-- little card 1-->
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/500/201" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-bg">
+                <p class="card-text ">
+                  able song larger running gray log case thing kept locate fly molecular it duty cool itself stopped
+                  meal
+                  gravity human traffic supper accident sand
+                </p>
+
+              </div>
+            </div>
+            <!-- /little card 1-->
+          </div>
+          <div class="col-4 my-2 ">
+            <!-- little card 2 -->
+            <div class="card ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/500/202" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-bg">
+                <p class="card-text">
+                  atomic worker compass agree properly minute kept union leather future location imagine tent
+                  thousand
+                  mail yesterday stairs known hill chose shorter rice its thee
+                </p>
+
+              </div>
+            </div>
+            <!-- /little card 2 -->
+          </div>
+          <div class="col-4 my-2  ">
+            <!-- little card 3 -->
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/500/203" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-bg">
+                <p class="card-text">
+                  suppose force hundred stuck pure fifteen worker tropical mail most clay name tool cheese handsome
+                  drove
+                  sudden deer birth more hay also biggest military
+                </p>
+
+              </div>
+            </div>
+            <!-- /little card 3 -->
+          </div>
+
+          <!-- /Bottom Bento 4/4/4-->
+        </div>
 
 
-    </div>
-  </section>
-  <!-- /Bentobox -->
+      </div>
+    </section>
+    <!-- /Bentobox -->
+
+  </div>
 
   <!-- js -->
   <script src="./js/script.js"></script>
