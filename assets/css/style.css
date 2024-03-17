@@ -35,20 +35,20 @@ header h2 {
 }
 
 header .site-section {
-  line-height: 60px;
+  line-height: 65px;
 }
 
-/* TODO: Creare hamburger per smartphone */
+/* TODO: Creare hamburger per tablet/smartphone */
 header ul li {
   /* ? Reset style */
   list-style: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 header ul li a {
   /* ? Reset style */
   text-decoration: none;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   padding: 4px 12px;
 }
 header ul li:hover a {
