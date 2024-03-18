@@ -120,7 +120,13 @@ body {
 .text-bg {
   background-color: var(--bg-gradient-secondary) !important;
 }
-/* TODO: creare effeto hover */
+
+.bento .card {
+  transition: all 0.5s;
+}
+.bento .card:hover {
+  scale: 1.03;
+}
 /*% /Bento */
 
 /*TODO: Rendere responsive */
